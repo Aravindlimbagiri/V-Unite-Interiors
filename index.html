@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>V-Unite Interiors | Luxury Interior Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+  --gold:#c9a24d;
+  --dark:#0e0e0e;
+  --dark-soft:#151515;
+  --muted:#b5b5b5;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:var(--dark);
+  color:#fff;
+  line-height:1.6;
+}
+
+/* ================= HEADER ================= */
+header{
+  min-height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero h1{font-size:60px}
+.hero p{font-size:20px;color:var(--muted);margin:20px 0 40px}
+
+.btn{
+  padding:16px 36px;
+  background:var(--gold);
+  color:#000;
+  border-radius:40px;
+  text-decoration:none;
+  margin:10px;
+  font-weight:600;
+  display:inline-block;
+}
+
+/* ================= COMMON ================= */
+section{padding:100px 20px}
+.container{max-width:1200px;margin:auto}
+
+.section-title{text-align:center;margin-bottom:70px}
+.section-title h2{font-size:42px}
+.section-title span{
+  color:var(--gold);
+  font-size:13px;
+  letter-spacing:3px;
+}
+
+/* ================= ABOUT ================= */
+.about{background:var(--dark-soft)}
+
+.about-content{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:70px;
+  align-items:center;
+}
+
+.about-text p{font-size:18px;color:var(--muted)}
+
+.about-image img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  border-radius:22px;
+}
+
+/* Mobile About */
+@media(max-width:900px){
+  .about-content{grid-template-columns:1fr;gap:40px}
+  .about-image{order:-1}
+  .about-image img{height:260px}
+  .about-text{text-align:center}
+}
+
+/* ================= FOUNDERS ================= */
+.founders{background:#0b0b0b}
+
+.founders-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+}
+
+.founder{
+  background:#000;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.founder img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+}
+
+.founder-info{
+  text-align:center;
+  padding:30px;
+}
+
+.founder-info span{color:var(--gold)}
+
+/* ================= SERVICES ================= */
+.services{background:var(--dark-soft)}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.service{
+  background:#000;
+  border-radius:18px;
+  overflow:hidden;
+}
+
+.service img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.service h3{text-align:center;padding:25px}
+
+/* ================= WHY ================= */
+.why{background:#0f0f0f}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:40px;
+}
+
+.why-box{
+  background:#000;
+  padding:40px;
+  border-radius:18px;
+  text-align:center;
+}
+
+.why-box i{
+  color:var(--gold);
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+/* ================= WORKFLOW (FLOW CHART) ================= */
+.workflow{background:#000}
+
+.flowchart{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.flow-step{
+  background:#000;
+  border:1px solid rgba(201,162,77,.35);
+  border-radius:18px;
+  padding:30px 25px;
+  text-align:center;
+  width:220px;
+  position:relative;
+}
+
+.flow-step i{
+  font-size:30px;
+  color:var(--gold);
+  margin-bottom:15px;
+}
+
+/* Arrow */
+.flow-arrow{
+  font-size:28px;
+  color:var(--gold);
+}
+
+/* Mobile Flow */
+@media(max-width:900px){
+  .flowchart{
+    flex-direction:column;
+  }
+  .flow-arrow{
+    transform:rotate(90deg);
+  }
+}
+
+/* ================= CONTACT ================= */
+.contact{background:var(--dark-soft)}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.contact-box{
+  background:#000;
+  padding:40px;
+  border-radius:18px;
+  text-align:center;
+}
+
+.contact-box a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.contact-box i{
+  font-size:28px;
+  color:var(--gold);
+  margin-bottom:15px;
+  display:block;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#000;
+  padding:40px;
+  text-align:center;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <h1>V-Unite Interiors</h1>
+    <p>From brick to lock — crafting timeless luxury interiors.</p>
+    <a class="btn" href="tel:+918019156476">Call Now</a>
+    <a class="btn" href="https://wa.me/918019156476">WhatsApp</a>
+  </div>
+</header>
+
+<section class="about">
+  <div class="container">
+    <div class="section-title"><h2>About Us</h2><span>WHO WE ARE</span></div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>V-Unite Interiors is a modern luxury interior design studio.</p>
+        <p>We blend creativity, craftsmanship, and premium materials to create timeless spaces.</p>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="founders">
+  <div class="container">
+    <div class="section-title"><h2>Our Founders</h2><span>LEADERSHIP</span></div>
+    <div class="founders-grid">
+      <div class="founder">
+        <img src="images/founder.jpeg">
+        <div class="founder-info"><h3>Gopu Vamshi</h3><span>Founder · 8019156476</span></div>
+      </div>
+      <div class="founder">
+        <img src="images/cofounder.jpeg">
+        <div class="founder-info"><h3>Limbagiri Vineeth</h3><span>Co-Founder · 7036331238</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
+    <div class="section-title"><h2>Our Services</h2><span>WHAT WE DO</span></div>
+    <div class="services-grid">
+      <div class="service"><img src="https://images.unsplash.com/photo-1615873968403-89e068629265"><h3>Residential Interiors</h3></div>
+      <div class="service"><img src="https://images.unsplash.com/photo-1718220216044-006f43e3a9b1"><h3>Commercial Spaces</h3></div>
+      <div class="service"><img src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467"><h3>Turnkey Projects</h3></div>
+      <div class="service"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"><h3>3D Design & Planning</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="container">
+    <div class="section-title"><h2>Why Choose Us</h2><span>OUR PROMISE</span></div>
+    <div class="why-grid">
+      <div class="why-box"><i class="fa-solid fa-couch"></i><h3>Limitless Range</h3></div>
+      <div class="why-box"><i class="fa-solid fa-clock"></i><h3>On-Time Delivery</h3></div>
+      <div class="why-box"><i class="fa-solid fa-shield-halved"></i><h3>20 Years Warranty</h3></div>
+      <div class="why-box"><i class="fa-solid fa-pen-ruler"></i><h3>Expert Design Team</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="workflow">
+  <div class="container">
+    <div class="section-title"><h2>Our Workflow</h2><span>HOW WE WORK</span></div>
+
+    <div class="flowchart">
+      <div class="flow-step"><i class="fa-solid fa-ruler-combined"></i><h3>We Measure</h3></div>
+      <div class="flow-arrow">➜</div>
+      <div class="flow-step"><i class="fa-solid fa-palette"></i><h3>We Design</h3></div>
+      <div class="flow-arrow">➜</div>
+      <div class="flow-step"><i class="fa-solid fa-hammer"></i><h3>We Execute</h3></div>
+      <div class="flow-arrow">➜</div>
+      <div class="flow-step"><i class="fa-solid fa-truck-fast"></i><h3>We Deliver</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <div class="section-title"><h2>Contact Us</h2><span>GET IN TOUCH</span></div>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <a href="tel:+918019156476">
+          <i class="fa-solid fa-phone"></i>
+          <p>+91 8019156476</p>
+        </a>
+      </div>
+      <div class="contact-box">
+        <a href="https://wa.me/918019156476">
+          <i class="fa-brands fa-whatsapp"></i>
+          <p>Chat on WhatsApp</p>
+        </a>
+      </div>
+      <div class="contact-box">
+        <a href="mailto:vamshigopu1743@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <p>vamshigopu1743@gmail.com</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 V-Unite Interiors · All Rights Reserved</p>
+  <p>Made with ❤️ by V-Unite</p>
+</footer>
+
+</body>
+</html>
